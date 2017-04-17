@@ -7,39 +7,34 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Julia Dizhak: Performace Optimization Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
-
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // Optional TODO: replace with your Google Analytics profile ID. 
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.js"></script>
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/print.css" rel="stylesheet" media="print">
   </head>
 
   <body>
     <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
+      <a href="/" class="profile-picture">
+        <img width="70" height="70" src="img/avatar.jpg">
+      </a>
       <p>Julia Dizhak<br><span>Front-end Developer</span></p>
     </header>
 
     <div class="container">
       <div class="hero">
-        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
+        <strong>I love web development!</strong>
+        This is a template for a simple portfolio.
+        This is a final project submission from udacity website performance optimization course.
+        <!-- I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :)  -->
+        <br>Contact me: <a href="mailto:yulia.scherbina@gmail.com">yulia.scherbina@gmail.com</a>
       </div>
 
       <div class="content">
         <ul>
           <li>
-            <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100">
+            <img
+                width="100"
+                height="50"
+                src="img/project1.jpg">
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
@@ -65,8 +60,34 @@
       </div>
 
       <footer>
-        <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+        <p>&copy; Web Performance 2017 <span id="crp-stats"></span></p>
       </footer>
+
+      <script type="text/javascript">
+        WebFontConfig = {
+          google: { families: [ 'Open Sans:400,700' ] }
+        };
+       (function() {
+         var wf = document.createElement('script');
+         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+             '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+         wf.type = 'text/javascript';
+         wf.async = 'true';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wf, s);
+       })();
+      </script>
+
+      <script>
+        (function(w,g){w['GoogleAnalyticsObject']=g;
+        w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+        // Optional TODO: replace with your Google Analytics profile ID.
+        ga('create', 'UA-XXXX-Y');
+        ga('send', 'pageview');
+      </script>
+      <script async src="http://www.google-analytics.com/analytics.js"></script>
+      <script async src="js/perfmatters.js"></script>
     </div>
   </body>
 </html>
